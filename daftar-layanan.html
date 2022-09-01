@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<!--
+This website is developed by @raf_lii        / Muhammad Rafli
+>>Topupskuy 2021<<
+Contact Me On :
+*Facebook : https://fb.com/raflii.seller
+*Instagram : https://instagram.com/raf_lii
+Thanks for not changing the copyright
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>LunaticaStore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="Gjmd0tgtAEiJEb4nel59fYKkPvKu9GWSoCuKu73U">
+    <meta content="LunaticaStore THE BEST VOUCHER GAME PROVIDER." name="description" />
+    <meta content="adittyasubagja" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon3.ico">
+
+    <!-- App css -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+
+    <link href="/assets/css/bootstrap-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" disabled />
+    <link href="/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" disabled />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+    <!-- icons -->
+    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://use.fontawesome.com/6da2e1892f.js"></script>
+    <script src="https://kit.fontawesome.com/99f8e55a96.js" crossorigin="anonymous"></script>
+    <!-- third party css -->
+    <link href="/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/libs/datatables.net-select-bs4/css/select.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- third party css end -->
+
+    <style>
+        /*body[data-topbar-color=light] {*/
+        /*    background-color: #d5d8de !important;*/
+        /*}*/
+
+        body[data-topbar-color=light] .navbar-custom {
+            /*background-color: #222831 !important;*/
+            position: absolute;
+        }
+
+        .topnav {
+            position: absolute;
+        }
+
+        .swiper {
+            width: 800px;
+            height: 350px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-slide {
+            width: 60%;
+        }
+
+        .swiper-slide:nth-child(2n) {
+            width: 40%;
+        }
+
+        .swiper-slide:nth-child(3n) {
+            width: 20%;
+        }
+
+        .content-page {
+            margin-left: 250px;
+            overflow: hidden;
+            padding: 0 15px 65px 15px;
+            min-height: 80vh;
+            margin-top: 30px;
+        }
+
+        .header {
+            color: black !important;
+        }
+
+        .card,
+        .form-control,
+        .form-select {
+            /*background-color: #222831 !important;*/
+            color: black;
+        }
+
+        .btn-check:checked+.btn {
+            border: 1px solid #43267D !important;
+        }
+
+        .swal-title {
+            margin-bottom: 28px;
+            font-size: 16px !important;
+            color: white;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+            padding: .8em 1em !important;
+            text-align: left !important;
+        }
+
+        .swal-text {
+            color: white;
+            font-weight: 200;
+            text-align: left !important;
+            font-size: 16px !important;
+        }
+
+        .swal-modal {
+            background-color: #222831;
+        }
+
+        .black-strip {
+            background-color: #43267D;
+            position: absolute;
+            width: 40px;
+            height: 5px;
+            border-radius: 10px;
+        }
+
+        .subscribe {
+            width: 100% !important;
+            background-color: #0275d8;
+            position: absolute;
+            right: 0;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .about {
+            margin-top: 200px;
+            margin-bottom: 50px;
+        }
+
+        .social {
+            margin: 0 15px;
+        }
+
+        .light {
+            border-color: #0275d8;
+        }
+
+
+        .btn-wa {
+            color: #0284FE !important;
+        }
+
+        .btn-call-float {
+            position: fixed;
+            width: 45px;
+            height: 45px;
+            bottom: 80px;
+            right: 20px;
+            color: #FFF !important;
+            background: #5e21d8;
+            border: 1px solid #FFF;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 99999;
+        }
+
+        .btn-insta-float {
+            position: fixed;
+            width: 45px;
+            height: 45px;
+            bottom: 140px;
+            right: 20px;
+            color: #FFF;
+            background: #b04bcc;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 99999;
+        }
+
+        #btn-gotop {
+            display: none;
+            position: fixed;
+            width: 45px;
+            height: 45px;
+            bottom: 20px;
+            right: 20px;
+            background: #1062e6;
+            color: #FFF;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 99999;
+        }
+
+        .btn-link {
+            border: none;
+            outline: none;
+            background: none;
+            cursor: pointer !important;
+            padding: 0;
+        }
+
+        @media (max-width: 576px) {
+            .content-page {
+                margin-left: 250px;
+                overflow: hidden;
+                padding: 0 15px 65px 15px;
+                min-height: 80vh;
+                margin-top: 70px;
+            }
+
+            .swiper {
+                margin-top: 20px;
+                width: 100%;
+                height: 200px;
+            }
+
+            .product {
+                width: 100px;
+            }
+
+        }
+    </style>
+
+    <link rel="stylesheet" href="/assets/css/custom-style.css">
+
+</head>
+
+<body class="loading" data-layout-mode="horizontal"
+    data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "light"}, "showRightSidebarOnPageLoad": true}'>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <div class="container-fluid">
+
+                <!-- LOGO -->
+                <div class="logo-box">
+                    <a href="https://lunaticastore.id" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="/assets/images/lunatica_banner_2.png" alt="" height="35">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="/assets/images/lunatica_banner_2.png" alt="" height="65">
+                            <!--<span class="logo-lg-text-dark">LunaticaStore</span>-->
+                        </span>
+                    </a>
+
+                    <a href="https://lunaticastore.id" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="/assets/images/logo-sm.png" alt="" height="24">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="/assets/images/logo-light.png" alt="" height="24">
+                        </span>
+                    </a>
+                </div>
+
+                <ul class="list-unstyled topnav-menu topnav-menu-left m-0 float-end">
+                    <li>
+                        <button class="button-menu-mobile">
+                            <i data-feather="menu"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <!-- Mobile menu toggle (Horizontal Layout)-->
+                        <a class="navbar-toggle nav-link" data-bs-toggle="collapse"
+                            data-bs-target="#topnav-menu-content">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </li>
+                    <ul class="navbar-nav d-none d-lg-block">
+                        <li class="nav-item">
+                            <a class="btn btn-login px-3 py-2 mt-2" href="/login">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i><span class="ml-3"></span> Masuk
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- end Topbar -->
+
+        <div class="topnav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+
+                    <div class="collapse navbar-collapse" id="topnav-menu-content">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="https://lunaticastore.id">
+                                    <i class="fa fa-home"></i>
+                                    <span> Halaman Utama </span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="https://lunaticastore.id/cari">
+                                    <i class="fa fa-search"></i>
+                                    <span> Cari Pesanan </span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="/daftar-layanan">
+                                    <i class="fa-solid fa-list"></i>
+                                    <span> Daftar Layanan </span>
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item d-block d-lg-none pb-3">
+                                <a class="btn btn-login px-3 py-2 mt-2 ml-5" href="/login">
+                                    <i class="fa fa-sign-in" aria-hidden="true"></i><span class="ml-3"></span> Masuk
+                                </a>
+                            </li>
+                        </ul> <!-- end navbar-->
+                    </div> <!-- end .collapsed-->
+                </nav>
+            </div> <!-- end container-fluid -->
+        </div> <!-- end topnav-->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <!-- <div class="content-page"> -->
+        <div class="content">
+            <!-- Start Content-->
+            <div class="container-fluid">
+
+                <div class="row mt-5 justify-content-center">
+
+                    <h1>Daftar Layanan Lunatica Store</h1>
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label><strong>Pilih Layanan :</strong></label>
+                                <div class="custom-select" id="layanan" style="width:230px;">
+                                    <select>
+                                        <option value="0" hidden></option>
+                                        <option value="1" selected>Mobile Legends</option>
+                                        <option value="2">Free Fire</option>
+                                        <option value="3">Mobile Legends Paket B</option>
+                                        <option value="4">PUBG Mobile</option>
+                                        <option value="5">Valorant</option>
+                                        <option value="7">League Of Legends Wild Rift</option>
+                                        <option value="16">Telkomsel</option>
+                                        <option value="17">Paket Joki</option>
+                                        <option value="18">Joki Rank</option>
+                                        <option value="19">Joki Classic</option>
+                                        <option value="20">Gift Kharisma</option>
+                                        <option value="21">Call of Duty Mobile</option>
+                                        <option value="22">Higgs Domino</option>
+                                        <option value="23">Genshin Impact</option>
+                                        <option value="24">Starlight Member</option>
+                                        <option value="25">Ragnarok M</option>
+                                        <option value="26">Arena Of Valor</option>
+                                        <option value="27">Laplace M</option>
+                                        <option value="28">Sausage Man</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CUSTOM SELECT OPTION JS -->
+                    <script>
+                        var x, i, j, l, ll, selElmnt, a, b, c;
+                            /* Look for any elements with the class "custom-select": */
+                            x = document.getElementsByClassName("custom-select");
+                            l = x.length;
+                            for (i = 0; i < l; i++) {
+                                selElmnt = x[i].getElementsByTagName("select")[0];
+                                ll = selElmnt.length;
+                                /* For each element, create a new DIV that will act as the selected item: */
+                                a = document.createElement("DIV");
+                                a.setAttribute("class", "select-selected");
+                                a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                                x[i].appendChild(a);
+                                /* For each element, create a new DIV that will contain the option list: */
+                                b = document.createElement("DIV");
+                                b.setAttribute("class", "select-items select-hide");
+                                for (j = 1; j < ll; j++) {
+                                    /* For each option in the original select element,
+                                    create a new DIV that will act as an option item: */
+                                    c = document.createElement("DIV");
+                                    c.innerHTML = selElmnt.options[j].innerHTML;
+                                    c.addEventListener("click", function (e) {
+                                        /* When an item is clicked, update the original select box,
+                                        and the selected item: */
+                                        var y, i, k, s, h, sl, yl;
+                                        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                                        sl = s.length;
+                                        h = this.parentNode.previousSibling;
+                                        for (i = 0; i < sl; i++) {
+                                            if (s.options[i].innerHTML == this.innerHTML) {
+                                                s.selectedIndex = i;
+                                                h.innerHTML = this.innerHTML;
+                                                y = this.parentNode.getElementsByClassName("same-as-selected");
+                                                yl = y.length;
+                                                for (k = 0; k < yl; k++) {
+                                                    y[k].removeAttribute("class");
+                                                }
+                                                this.setAttribute("class", "same-as-selected");
+                                                break;
+                                            }
+                                        }
+                                        h.click();
+                                    });
+                                    b.appendChild(c);
+                                }
+                                x[i].appendChild(b);
+                                a.addEventListener("click", function (e) {
+                                    /* When the select box is clicked, close any other select boxes,
+                                    and open/close the current select box: */
+                                    e.stopPropagation();
+                                    closeAllSelect(this);
+                                    this.nextSibling.classList.toggle("select-hide");
+                                    this.classList.toggle("select-arrow-active");
+                                });
+                            }
+
+                            function closeAllSelect(elmnt) {
+                                /* A function that will close all select boxes in the document,
+                                except the current select box: */
+                                var x, y, i, xl, yl, arrNo = [];
+                                x = document.getElementsByClassName("select-items");
+                                y = document.getElementsByClassName("select-selected");
+                                xl = x.length;
+                                yl = y.length;
+                                for (i = 0; i < yl; i++) {
+                                    if (elmnt == y[i]) {
+                                        arrNo.push(i)
+                                    } else {
+                                        y[i].classList.remove("select-arrow-active");
+                                    }
+                                }
+                                for (i = 0; i < xl; i++) {
+                                    if (arrNo.indexOf(i)) {
+                                        x[i].classList.add("select-hide");
+                                    }
+                                }
+                            }
+
+                            /* If the user clicks anywhere outside the select box,
+                            then close all select boxes: */
+                            document.addEventListener("click", closeAllSelect);
+                    </script>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-responsive table-striped table-bordered data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Layanan</th>
+                                        <th>Harga Publik</th>
+                                        <th>Harga Reseller</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd">
+                                        <td class="sorting_1">86 Diamond</td>
+                                        <td>Rp.19,840</td>
+                                        <td>Rp.19,462</td>
+                                        <td><span class="badge btn-success">Available</span></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">172 Diamond</td>
+                                        <td>Rp.39,681</td>
+                                        <td>Rp.38,925</td>
+                                        <td><span class="badge btn-success">Available</span></td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1">(PROMO) 257 Diamond</td>
+                                        <td>Rp.56,448</td>
+                                        <td>Rp.57,001</td>
+                                        <td><span class="badge btn-success">Available</span></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">344 Diamond</td>
+                                        <td>Rp.79,361</td>
+                                        <td>Rp.77,849</td>
+                                        <td><span class="badge btn-success">Available</span></td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1">429 Diamond</td>
+                                        <td>Rp.99,201</td>
+                                        <td>Rp.97,311</td>
+                                        <td><span class="badge btn-success">Available</span></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">(PROMO) 514 Diamond</td>
+                                        <td>Rp.114,002</td>
+                                        <td>Rp.114,002</td>
+                                        <td><span class="badge btn-success">Available</span></td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1">601 Diamond</td>
+                                        <td>Rp.138,881</td>
+                                        <td>Rp.136,236</td>
+                                        <td><span class="badge btn-success">Available</span></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">706 Diamond</td>
+                                        <td>Rp.158,722</td>
+                                        <td>Rp.155,699</td>
+                                        <td><span class="badge btn-success">Available</span></td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1">792 Diamond</td>
+                                        <td>Rp.178,562</td>
+                                        <td>Rp.175,161</td>
+                                        <td><span class="badge btn-success">Available</span></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">878 Diamond</td>
+                                        <td>Rp.198,403</td>
+                                        <td>Rp.194,624</td>
+                                        <td><span class="badge btn-success">Available</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- <script type="text/javascript">
+                    $(function () {
+
+                        var table = $('.data-table').DataTable({
+                            processing: true,
+                            serverSide: true,
+                            ajax: {
+                                url: "/daftar-layanan",
+                                data: function (d) {
+                                    console.log(d)
+                                    d.layanan = $('#layanan').val(),
+                                        d.search = $('input[type="search"]').val()
+                                }
+                            },
+                            columns: [{
+                                    data: 'layanan',
+                                    name: 'layanan'
+                                },
+                                {
+                                    data: 'harga',
+                                    name: 'harga',
+                                    render: $.fn.dataTable.render.number(',', '.', 0, 'Rp.')
+                                },
+                                {
+                                    data: 'harga_reseller',
+                                    name: 'harga_reseller',
+                                    render: $.fn.dataTable.render.number(',', '.', 0, 'Rp.')
+                                },
+                                {
+                                    data: 'status',
+                                    name: 'status'
+                                },
+                            ]
+                        });
+
+                        $('#layanan').change(function () {
+                            table.draw();
+                        });
+
+                    });
+                </script> -->
+                <!-- Slider main container -->
+
+                <!-- === NAVIGATION BAR : START === -->
+
+                <!-- === NAVIGATION BAR : END === -->
+
+                <!-- === NAVIGATION BAR CONTENT : START === -->
+
+                <!-- === NAVIGATION BAR CONTENT : END === -->
+            </div> <!-- content -->
+            <!-- </div> container -->
+
+            <section id="top-footer">
+                <div class="container-fluid">
+                    <div class="row row-cols-1 row-cols-md-3 gx-4 text-center text-md-start py-3">
+                        <div class="col">
+                            <h3 class="uppercase text-white">LunaticaStore</h3>
+                            <span class="black-strip mx-auto"></span>
+                            <div class="pt-2 pt-md-3">
+                                <span class="fw-light">LunaticaStore Penyedia Layanan Top-Up Game Favorite-mu Tanpa
+                                    Ribet,
+                                    Nikmati Pengalaman Top-Up Yang Menyenangkan Bersama Kami. Kami Menyediakan
+                                    Berbagai Metode Pembayaran Yang Mudah Dan Menawarkan Banyak Judul Game.</span>
+                            </div>
+                        </div>
+                        <div class="col mt-3 mt-md-0">
+                            <h3 class="uppercase text-white">Peta Situs</h3>
+                            <span class="black-strip"></span>
+                            <div class="footer-links d-flex flex-column pt-2 pt-md-3">
+                                <a href="javascript:void(0);">About Us</a>
+                                <a href="javascript:void(0);">Help</a>
+                                <a href="javascript:void(0);">Contact Us</a>
+                                <a href="javascript:void(0);">Privacy & Policy</a>
+                            </div>
+                        </div>
+                        <div class="col mt-3 mt-md-0">
+                            <h3 class="uppercase text-white">Pembayaran</h3>
+                            <span class="black-strip"></span>
+                            <div class="pt-2 pt-md-3">
+                                <marquee class="list-pembayaran">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Alfamart_logo.svg">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png">
+                                    <img src="https://hopestore.id/assets/img/bca_footer.png">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/1200px-Bank_Mandiri_logo_2016.svg.png">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/800px-BNI_logo.svg.png">
+                                    <img src="https://lunaticastore.id/assets/permata.png">
+                                    <img src="https://rexonmarket.id/assets/payment/ovo.png">
+                                    <img src="https://lelogama.go-jek.com/logo/GoPay-white.text.png">
+                                    <img src="https://hopestore.id/assets/img/dana_footer.png">
+                                    <img src="https://hopestore.id/assets/img/shopay_footer.png">
+                                    <img src="https://lunaticastore.id/assets/link.png">
+                                    <img src="https://hopestore.id/assets/img/qris_footer.png">
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid text-center">
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> &copy; Copyright LunaticaStore
+                </div>
+            </footer>
+            <!-- end Footer -->
+
+        </div> <!-- content -->
+
+
+
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+        <!-- END wrapper -->
+
+        <a href="https://wa.me/6281282186998" class="btn-call-float shadow-sm" target="_blank">
+            <i class="fas fa-comment-dots"></i>
+        </a>
+        <a href="#" id="btn-gotop" onclick="topFunction()" style="display: block;">
+            <i class="fas fa-angle-up"></i>
+        </a>
+        <!-- Vendor js -->
+        <script src="/assets/js/vendor.min.js"></script>
+
+        <!-- page js -->
+        <script src="/assets/js/pages/dashboard.init.js"></script>
+
+        <!-- App js -->
+        <script src="/assets/js/app.min.js"></script>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <!-- third party js -->
+        <script src="/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+        <script src="/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+        <script src="/assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="/assets/libs/datatables.net-buttons/js/buttons.flash.min.js"></script>
+        <script src="/assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="/assets/libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+        <script src="/assets/libs/datatables.net-select/js/dataTables.select.min.js"></script>
+        <script async src="https://www.google.com/recaptcha/api.js"></script>
+        <!-- third party js ends -->
+        <script type="text/javascript">
+            const swiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 5,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+            });
+
+            mybutton = document.getElementById("btn-gotop");
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            $('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus')
+            })
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+</body>
+
+</html>

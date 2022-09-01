@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<!--
+This website is developed by @raf_lii    / Muhammad Rafli
+>>Topupskuy 2021<<
+Contact Me On :
+*Facebook : https://fb.com/raflii.seller
+*Instagram : https://instagram.com/raf_lii
+Thanks for not changing the copyright
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>PUBG Mobile - LunaticaStore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="dawYjX7cHnMrYyQGRFEPcm4x2WX9uI6ZqsrHrYU4">
+    <meta content="LunaticaStore THE BEST VOUCHER GAME PROVIDER." name="description" />
+    <meta content="raf_lii" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon3.ico">
+
+    <!-- App css -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+
+    <link href="/assets/css/bootstrap-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" disabled />
+    <link href="/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" disabled />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- icons -->
+    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://use.fontawesome.com/6da2e1892f.js"></script>
+    <script src="https://kit.fontawesome.com/99f8e55a96.js" crossorigin="anonymous"></script>
+    <!-- third party css -->
+    <link href="/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/libs/datatables.net-select-bs4/css/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- third party css end -->
+
+    <style>
+        /*body[data-topbar-color=light] {*/
+        /*    background-color: #d5d8de !important;*/
+        /*}*/
+
+        body[data-topbar-color=light] .navbar-custom {
+            /*background-color: #222831 !important;*/
+            position: absolute;
+        }
+
+        .topnav {
+            position: absolute;
+        }
+
+        .but {
+            background-color: #fff !important;
+            color: black !important;
+            height: 100%;
+        }
+
+        .swiper {
+            width: 800px;
+            height: 350px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-slide {
+            width: 60%;
+        }
+
+        .swiper-slide:nth-child(2n) {
+            width: 40%;
+        }
+
+        .swiper-slide:nth-child(3n) {
+            width: 20%;
+        }
+
+        .content-page {
+            margin-left: 250px;
+            overflow: hidden;
+            padding: 0 15px 65px 15px;
+            min-height: 80vh;
+            margin-top: 30px;
+        }
+
+        .header {
+            color: black !important;
+        }
+
+        .card,
+        .form-control,
+        .form-select {
+            /*background-color: #222831 !important;*/
+            color: black;
+        }
+
+        div input[type=radio]:checked+label {
+            background-color: #0275d8 !important;
+        }
+
+        .btn-check:checked+.btn-secondary {
+            border-color: #0275d8;
+            width: 100%;
+        }
+
+
+        .swal-title {
+            margin-bottom: 28px;
+            font-size: 16px !important;
+            color: white;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+            padding: .8em 1em !important;
+            text-align: left !important;
+        }
+
+        .swal-text {
+            color: white;
+            font-weight: 200;
+            text-align: left !important;
+            font-size: 16px !important;
+        }
+
+        .swal-modal {
+            background-color: #222831;
+        }
+
+        .black-strip {
+            background-color: #dc3545;
+            position: absolute;
+            width: 40px;
+            height: 5px;
+            border-radius: 10px;
+        }
+
+        .subscribe {
+            width: 100% !important;
+            background-color: #0275d8;
+            position: absolute;
+            right: 0;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .about {
+            margin-top: 200px;
+            margin-bottom: 50px;
+        }
+
+        .social {
+            margin: 0 15px;
+        }
+
+        .light {
+            border-color: #0275d8;
+        }
+
+
+        .btn-wa {
+            color: #0284FE !important;
+        }
+
+        .btn-call-float {
+            position: fixed;
+            width: 45px;
+            height: 45px;
+            bottom: 80px;
+            right: 20px;
+            color: #FFF;
+            background: #55c759;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 99999;
+        }
+
+        .btn-insta-float {
+            position: fixed;
+            width: 45px;
+            height: 45px;
+            bottom: 140px;
+            right: 20px;
+            color: #FFF;
+            background: #b04bcc;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 99999;
+        }
+
+        #btn-gotop {
+            display: none;
+            position: fixed;
+            width: 45px;
+            height: 45px;
+            bottom: 20px;
+            right: 20px;
+            background: #1062e6;
+            color: #FFF;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 99999;
+        }
+
+        .btn-link {
+            border: none;
+            outline: none;
+            background: none;
+            cursor: pointer !important;
+            padding: 0;
+        }
+
+        @media (max-width: 576px) {
+            .content-page {
+                margin-left: 250px;
+                overflow: hidden;
+                padding: 0 15px 65px 15px;
+                min-height: 80vh;
+                margin-top: 70px;
+            }
+
+            .swiper {
+                margin-top: 20px;
+                width: 100%;
+                height: 200px;
+            }
+
+            .product {
+                width: 100px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body class="loading" data-layout-mode="horizontal" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "light"}, "showRightSidebarOnPageLoad": true}'>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <div class="container-fluid">
+
+                <!-- LOGO -->
+                <div class="logo-box">
+                    <a href="https://lunaticastore.id" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="/assets/images/lunatica_banner.png" alt="" height="35">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="/assets/images/lunatica_banner.png" alt="" height="65">
+                            <!--<span class="logo-lg-text-dark">LunaticaStore</span>-->
+                        </span>
+                    </a>
+
+                    <a href="https://lunaticastore.id" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="/assets/images/logo-sm.png" alt="" height="24">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="/assets/images/logo-light.png" alt="" height="24">
+                        </span>
+                    </a>
+                </div>
+
+                <ul class="list-unstyled topnav-menu topnav-menu-left m-0 float-end">
+                    <li>
+                        <button class="button-menu-mobile">
+                            <i data-feather="menu"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <!-- Mobile menu toggle (Horizontal Layout)-->
+                        <a class="navbar-toggle nav-link" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </li>
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- end Topbar -->
+
+        <div class="topnav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+
+                    <div class="collapse navbar-collapse" id="topnav-menu-content">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="https://lunaticastore.id">
+                                    <i class="fa fa-home"></i>
+                                    <span> Halaman Utama </span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="https://lunaticastore.id/cari">
+                                    <i class="fa fa-search"></i>
+                                    <span> Cari Pesanan </span>
+                                </a>
+                            </li>
+                                                        <li class="nav-item dropdown">
+                                <a href="https://lunaticastore.id/login" class="nav-link dropdown-toggle arrow-none">
+                                    <i class="fa fa-sign-in"></i>
+                                    <span> Masuk </span>
+                                </a>
+                            </li>
+                                                                                    <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="https://wa.me/+62821-1545-6404">
+                                    <i class="fa fa-phone"></i>
+                                    <span> Hubungi Kami </span>
+                                </a>
+                            </li>
+                        </ul> <!-- end navbar-->
+                    </div> <!-- end .collapsed-->
+                </nav>
+            </div> <!-- end container-fluid -->
+        </div> <!-- end topnav-->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+                <!-- Start Content-->
+                <div class="container-fluid">
+                                        <div class="row mt-5 justify-content-center">
+    <div class="col-12 col-md-3">
+        <div class="card light">
+            <div class="card-body">
+                <img src="/assets/thumbnail/1653398498.jpg" style="max-width:300px; max-height:200px" class="rounded product" alt="ml">
+                <h5 class="m-0 mt-1 fs-14 fw-bold text-dark">PUBG Mobile</h5>
+                <br>
+                <span class="text-dark">TopUp PUBG Mobile </span><br>
+                <p>Cara Order : </p>
+                <ol>
+                                        <li>Masukkan <b>ID (SERVER)</b> Anda</li>
+                    <li>Pilih <b>Nominal </b>TopUp</li>
+                    <li>Pilih <b>Metode Pembayaran</b></li>
+                    <li>Tulis <b>Nomor WhatsApp</b> Sesuai Petunjuk!</li>
+                    <li>Klik <b>Beli </b>&amp; lakukan Pembayaran</li>
+                    <li><b>Tunggu Hingga</b> Diamond masuk ke akun Anda.</li>
+                                    </ol>
+            </div>
+        </div>
+
+                <div class="card light">
+            <div class="card-body text-center">
+                <h5 class="m-0 mt-1 fs-14 fw-bold text-dark header">Estimasi Proses Otomatis 1-3 Menit</h5>
+                <marquee>
+                    <h5 class="m-0 mt-1 fs-14 fw-bold text-dark header">Event Maximal 120 Menit</h5>
+                </marquee>
+                <h5 class="m-0 mt-1 fs-14 fw-bold text-success header">Layanan Aktif 24 Jam!</h5>
+            </div>
+        </div>
+            </div>
+
+    <div class="col-12 col-md-6">
+        <div class="card light">
+            <div class="card-body">
+                <h4 class="text-dark mb-3 mt-0 fw-bold">1. Lengkapi data</h4>
+                <div class="row">
+                                        <div class="col-12">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="user_id" placeholder="Masukkan User ID">
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div> <!-- end card -->
+        <div class="card light">
+            <div class="card-body">
+                <h4 class="text-dark mb-3 mt-0 fw-bold">2. Pilih Nominal</h4>
+                                <div class="row text-center">
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="36" autocomplete="off" value="36">
+                        <label class="btn btn-secondary d-block fw-light but" for="36">
+                            16 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="37" autocomplete="off" value="37">
+                        <label class="btn btn-secondary d-block fw-light but" for="37">
+                            26 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="38" autocomplete="off" value="38">
+                        <label class="btn btn-secondary d-block fw-light but" for="38">
+                            52 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="39" autocomplete="off" value="39">
+                        <label class="btn btn-secondary d-block fw-light but" for="39">
+                            70 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="40" autocomplete="off" value="40">
+                        <label class="btn btn-secondary d-block fw-light but" for="40">
+                            131 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="41" autocomplete="off" value="41">
+                        <label class="btn btn-secondary d-block fw-light but" for="41">
+                            263 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="42" autocomplete="off" value="42">
+                        <label class="btn btn-secondary d-block fw-light but" for="42">
+                            530 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="43" autocomplete="off" value="43">
+                        <label class="btn btn-secondary d-block fw-light but" for="43">
+                            825 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="44" autocomplete="off" value="44">
+                        <label class="btn btn-secondary d-block fw-light but" for="44">
+                            1250 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="45" autocomplete="off" value="45">
+                        <label class="btn btn-secondary d-block fw-light but" for="45">
+                            1750 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="46" autocomplete="off" value="46">
+                        <label class="btn btn-secondary d-block fw-light but" for="46">
+                            2500 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="47" autocomplete="off" value="47">
+                        <label class="btn btn-secondary d-block fw-light but" for="47">
+                            3500 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="48" autocomplete="off" value="48">
+                        <label class="btn btn-secondary d-block fw-light but" for="48">
+                            5000 UC
+                        </label>
+                    </div>
+                                        <div class="col-md-4 col-6 mt-2">
+                        <input type="radio" class="btn-check" name="nominal" id="49" autocomplete="off" value="49">
+                        <label class="btn btn-secondary d-block fw-light but" for="49">
+                            7000 UC
+                        </label>
+                    </div>
+                                    </div>
+            </div>
+        </div> <!-- end card -->
+        <div class="card light">
+            <div class="card-body">
+                <h4 class="text-dark mb-3 mt-0 fw-bold">3. Pilih Tipe Pembayaran</h4>
+                <div class="row">
+                    <div class="mt-2">
+                        <a href="" class="text-white collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <div class="card-header card-custom" id="headingOne">
+                                <h5 class="m-0 fs-16 fw-light text-dark">
+                                    Ewallet
+                                    <i class="uil uil-angle-down float-end accordion-arrow"></i>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <input type="radio" class="btn-check" name="pembayaran" id="qris" autocomplete="off" value="QRISC">
+                            <label class="btn btn-secondary d-block mt-2 text-start but" for="qris">
+                                <img class="img-fluid " width="30%" height="2%" src="/assets/image/qris.png">
+                                <p class="float-end d-inline-block">
+                                    <span class="badge bg-primary" id="QRIS"></span>
+                                </p>
+                            </label>
+                            <input type="radio" class="btn-check" name="pembayaran" id="ovo" autocomplete="off" value="ovo">
+                            <label class="btn btn-secondary d-block mt-2 text-start but" for="ovo">
+                                <img class="img-fluid " width="30%" height="2%" src="/assets/image/ovo.jpg">
+                                <p class="float-end d-inline-block">
+                                    <span class="badge bg-primary" id="OVO"></span>
+                                </p>
+                            </label>
+                            <input type="radio" class="btn-check" name="pembayaran" id="gopay" autocomplete="off" value="gopay">
+                            <label class="btn btn-secondary d-block mt-2 text-start but" for="gopay">
+                                <img class="img-fluid " width="30%" height="2%" src="https://1.bp.blogspot.com/-HWNpI1A87vw/XJNq8llVlnI/AAAAAAAAAa8/5PpRCSJVjQQCLrVW4DMYobzCQRlzFj2BQCLcBGAs/s1600/Logo%2BGoPay%2BVector%2BCDR%2Bdan%2BPNG.png">
+                                <p class="float-end d-inline-block">
+                                    <span class="badge bg-primary" id="GOPAY"></span>
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <a href="" class="text-dark collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="card-header card-custom" id="headingTwo">
+                                <h5 class="m-0 fs-16 fw-light text-dark">
+                                    Convenience Store
+                                    <i class="uil uil-angle-down float-end accordion-arrow"></i>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <input type="radio" class="btn-check" name="pembayaran" id="alfamart" autocomplete="off" value="ALFAMART">
+                            <label class="btn btn-secondary d-block mt-2 text-start but" for="alfamart">
+                                <img class="img-fluid " width="30%" height="2%" src="/assets/image/alfamart.png">
+                                <p class="float-end d-inline-block">
+                                    <span class="badge bg-primary" id="ALFAMART"></span>
+                                </p>
+                            </label>
+                            <input type="radio" class="btn-check" name="pembayaran" id="indomaret" autocomplete="off" value="INDOMARET">
+                            <label class="btn btn-secondary d-block mt-2 text-start but" for="indomaret">
+                                <img class="img-fluid " width="30%" height="2%" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png">
+                                <p class="float-end d-inline-block">
+                                    <span class="badge bg-primary" id="INDOMARET"></span>
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <a href="" class="text-dark collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="card-header card-custom" id="headingThree">
+                                <h5 class="m-0 fs-16 fw-light text-dark">
+                                    Virtual Account
+                                    <i class="uil uil-angle-down float-end accordion-arrow"></i>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <input type="radio" class="btn-check" name="pembayaran" id="bca" autocomplete="off" value="BCAVA">
+                            <label class="btn btn-secondary d-block mt-2 text-start but" for="bca">
+                                <img class="img-fluid " width="30%" height="2%" src="https://bobontopup.com/assets/images/payment/bca.png">
+                                <p class="float-end d-inline-block">
+                                    <span class="badge bg-primary" id="BCA"></span>
+                                </p>
+                            </label>
+                            <input type="radio" class="btn-check" name="pembayaran" id="bni" autocomplete="off" value="BNIVA">
+                            <label class="btn btn-secondary d-block mt-2 text-start but" for="bni">
+                                <img class="img-fluid " width="30%" height="2%" src="https://bobontopup.com/assets/images/payment/bni.png">
+                                <p class="float-end d-inline-block">
+                                    <span class="badge bg-primary" id="BNI"></span>
+                                </p>
+                            </label>
+                            <input type="radio" class="btn-check" name="pembayaran" id="mandiri" autocomplete="off" value="MANDIRIVA">
+                            <label class="btn btn-secondary d-block mt-2 text-start but" for="mandiri">
+                                <img class="img-fluid " width="30%" height="2%" src="/assets/image/mandiri.png">
+                                <p class="float-end d-inline-block">
+                                    <span class="badge bg-primary" id="MANDIRI"></span>
+                                </p>
+                            </label>
+                            <input type="radio" class="btn-check" name="pembayaran" id="permata" autocomplete="off" value="PERMATAVA">
+                            <label class="btn btn-secondary d-block mt-2 text-start but" for="permata">
+                                <img class="img-fluid " width="30%" height="2%" src="/assets/image/permata.png">
+                                <p class="float-end d-inline-block">
+                                    <span class="badge bg-primary" id="PERMATA"></span>
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div><!-- end card -->
+        <div class="card light">
+            <div class="card-body">
+                <h4 class="text-dark mb-3 mt-0 fw-bold">Beli!</h4>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <input type="number" class="form-control" placeholder="Nomor HP ( 628xxxxx )" name="nomor">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Masukkan Email Anda" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end card -->
+        <button id="order" class="col-12 btn btn-primary btn-lg btn-block mb-3" type="button">Beli Sekarang</button>
+    </div><!-- end col -->
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("input[type=radio][name=nominal]").change(function() {
+            var nominal = $("input[name='nominal']:checked").val();
+
+            if (nominal) {
+                $.ajax({
+                    url: "/game/harga",
+                    dataType: "json",
+                    type: "POST",
+                    data: {
+                        "_token": "dawYjX7cHnMrYyQGRFEPcm4x2WX9uI6ZqsrHrYU4",
+                        "nominal": nominal
+                    },
+                    success: function(res) {
+                        $("#OVO").html(res.harga);
+                        $("#GOPAY").html(res.harga);
+                        $("#PERMATA").html(res.harga);
+                        $("#CIMBVA").html(res.harga);
+                        $("#BSIVA").html(res.harga);
+                        $("#BNI").html(res.harga);
+                        $("#BRI").html(res.harga);
+                        $("#MANDIRI").html(res.harga);
+                        $("#BCA").html(res.harga);
+                        $("#ALFAMART").html(res.harga);
+                        $("#INDOMARET").html(res.harga);
+                        $("#ALFAMIDI").html(res.harga);
+                        $("#MANDIRIVA").html(res.harga);
+                        $("#OVOS").html(res.harga);
+                        $("#QRIS").html(res.harga);
+                        $("#MYBVA").html(res.harga);
+                        $("#SMSVA").html(res.harga);
+                        $("#MUAMALATVA").html(res.harga);
+                        $("#DANAMONVA").html(res.harga);
+                        $("#BSS").html(res.harga);
+                        $("#LINKAJA").html(res.harga);
+                        $("#SHOPEEPAY").html(res.harga);
+                        $("#SALDO").html(res.harga);
+                    }
+                })
+            }
+        });
+        $("#order").on("click", function() {
+            var uid = $("#user_id").val();
+            var zone = $("#zone").val();
+            var service = $("input[name='nominal']:checked").val();
+            var pembayaran = $("input[name='pembayaran']:checked").val();
+            var nomor = $("input[name='nomor']").val();
+            var email = $("input[name='email']").val();
+            $.ajax({
+                url: "/game/konfirmasi-data",
+                dataType: "JSON",
+                type: "POST",
+                data: {
+                    '_token': 'dawYjX7cHnMrYyQGRFEPcm4x2WX9uI6ZqsrHrYU4',
+                    'uid': uid,
+                    'zone': zone,
+                    'service': service,
+                    'payment_method': pembayaran,
+                    'nomor': nomor,
+                    'captcha': grecaptcha.getResponse(),
+                    'email': email
+                },
+                beforeSend: function() {
+                    Swal.fire({
+                        icon: "info",
+                        title: "Mohon Tunggu",
+                        background: '#222831',
+                        color: '#fff',
+                        showConfirmButton: false,
+                        allowOutsideClick: false,
+                    });
+                },
+                success: function(res) {
+                    if (res.status == true) {
+                        Swal.fire({
+                            background: '#222831',
+                            color: '#fff',
+                            titleText: 'Data Pembeli',
+                            html: `${res.data}`,
+                            showCancelButton: true,
+                            confirmButtonText: 'Lanjutkan Pembelian',
+                            cancelButtonText: 'Batal',
+                            customClass: {
+                                title: 'swal-title',
+                                htmlContainer: 'swal-text'
+                            }
+
+                        }).then(resp => {
+                            if (resp.isConfirmed) {
+                                var nickname = $("#nick").text();
+                                var nohp = $("input[name='nomor']").val();
+                                var email = $("input[name='email']").val();
+                                $.ajax({
+                                    url: "/game/pembelian",
+                                    dataType: "JSON",
+                                    type: "POST",
+                                    data: {
+                                        '_token': 'dawYjX7cHnMrYyQGRFEPcm4x2WX9uI6ZqsrHrYU4',
+                                        'nickname': nickname,
+                                        'uid': uid,
+                                        'zone': zone,
+                                        'service': service,
+                                        'payment_method': pembayaran,
+                                        'nomor': nohp,
+                                        'email': email
+
+                                    },
+                                    success: function(resOrder) {
+                                        if (resOrder.status) {
+                                            Swal.fire({
+                                                title: 'Berhasil memesan!',
+                                                text: `Order ID : ${resOrder.order_id}`,
+                                                icon: 'success',
+                                                background: '#222831',
+                                                color: '#fff'
+                                            });
+                                            window.location = `/pembelian/invoice/${resOrder.order_id}`;
+                                        } else {
+                                            Swal.fire({
+                                                title: 'Oops...',
+                                                text: `${resOrder.data}`,
+                                                icon: 'error',
+                                                background: '#222831',
+                                                color: '#fff'
+                                            });
+                                        }
+                                    }
+                                })
+                            }
+                        })
+                    } else if (res.status == false) {
+                        Swal.fire({
+                            title: 'Oops...',
+                            text: res.data,
+                            icon: 'error',
+                            background: '#222831',
+                            color: '#fff'
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Oops...',
+                            text: 'User ID tidak ditemukan.',
+                            icon: 'error',
+                            background: '#222831',
+                            color: '#fff'
+                        });
+                    }
+                },
+                error: function(e) {
+                    if (e.status == 422) {
+                        Swal.fire({
+                            title: 'Oops...',
+                            text: 'Pastikan anda sudah mengisi semua data yang diperlukan.',
+                            icon: 'error',
+                            background: '#222831',
+                            color: '#fff'
+                        });
+                    }
+                }
+            })
+        })
+    });
+</script>
+                </div> <!-- container -->
+
+            </div> <!-- content -->
+
+                        <!-- Footer Start -->
+            <footer class="footer" style="background-color:white;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> &copy; Copyright LunaticaStore
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-end footer-links d-none d-sm-block">
+                                <a href="javascript:void(0);">About Us</a>
+                                <a href="javascript:void(0);">Help</a>
+                                <a href="javascript:void(0);">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+
+    </div>
+    <!-- END wrapper -->
+    <a href="https://ig.me/rexonmarket.id/" class="btn-insta-float shadow-sm" target="_blank">
+        <i class="fab fa-instagram" style="margin-top: 9px;"></i>
+    </a>
+    <a href="https://wa.me/6285155299353" class="btn-call-float shadow-sm" target="_blank">
+        <i class="fab fa-whatsapp" style="margin-top: 9px;"></i>
+    </a>
+    <a href="#" id="btn-gotop" onclick="topFunction()" style="display: block;">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- Vendor js -->
+    <script src="/assets/js/vendor.min.js"></script>
+
+    <!-- page js -->
+    <script src="/assets/js/pages/dashboard.init.js"></script>
+
+    <!-- App js -->
+    <script src="/assets/js/app.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- third party js -->
+    <script src="/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <script src="/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="/assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="/assets/libs/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="/assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="/assets/libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="/assets/libs/datatables.net-select/js/dataTables.select.min.js"></script>
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- third party js ends -->
+    <script type="text/javascript">
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 5,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
+        mybutton = document.getElementById("btn-gotop");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        $('#myModal').on('shown.bs.modal', function() {
+            $('#myInput').trigger('focus')
+        })
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
